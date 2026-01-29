@@ -1,11 +1,11 @@
-- name: Install Nginx
+- name: Install Apache
   apt:
-    name: nginx
+    name: apache2
     state: present
     update_cache: yes
  
-- name: Start Nginx
+- name: Start Apache
   service:
-    name: nginx
+    name: apache2
     state: started
     enabled: yes
